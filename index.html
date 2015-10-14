@@ -8,9 +8,10 @@
 		<title>Eunice Kim | UI/UX Design Enthusiast</title>
 
 		<!-- UI Kit -->
-		<link rel="stylesheet" href="uikit.min.css"/>
-		<script src="jquery.js"></script>
-		<script src="uikit.min.js"></script>
+        <link rel="stylesheet" href="css/uikit.min.css"/> 
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/uikit.min.js"></script>
 
 		<link rel="stylesheet" href="css/style.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Satisfy|Oxygen' rel='stylesheet' type='text/css'>
@@ -23,16 +24,18 @@
 				</a>
 				<ul class="uk-navbar-nav">
 					<li>
-            <a class="uk-button" href="#about" data-uk-smooth-scroll>About</a>
+            <a href="#about" class="uk-button" data-uk-smooth-scroll>About</a>
           </li>
+<!--
           <li>
             <a class="uk-button" href="#interests" data-uk-smooth-scroll>Interests</a>
           </li>
+-->
           <li>
             <a class="uk-button" href="#portfolio" data-uk-smooth-scroll>Portfolio</a>
           </li>
           <li>
-          	<a class="uk-button" href="#classwork" data-uk-smooth-scroll>Classwork</a>
+          	<a class="uk-button" href="#coursework" data-uk-smooth-scroll>Coursework</a>
           </li>
           <li>
             <a class="uk-button" href="#contact" data-uk-smooth-scroll>Contact</a>
@@ -52,18 +55,152 @@
     </header>
     <section id="about">
     	<div class="container">
-    		<p> I'm Eunice, a Cognitive Science major at the University of California, Berkeley.
-    			I'm an aspiring UI/UX designer with passion for Cognitive Neuroscience and Cognitive Psychology. I like to look at things and wonder why they are the way they are. </p>
+    		<div class="heading">about me</div>
+    		<hr class="short hr-light">
+    		<p>I am Eunice, a Cognitive Science major at the University of California, Berkeley. <br>
+    		I'm an aspiring UI/UX designer with passion for Cognitive Neuroscience and Cognitive Psychology. <br>
+    		I like to look at things and wonder why they are the way they are.
+            </p>
     	</div>
     </section>
+<!--
     <section id="interests">
+    	<div class="container">
+    		<div class="heading dark">what interests me</div>
+    		<hr class="short hr-dark">
+
     </section>
+-->
     <section id="portfolio">
+        <div class="container">
+            <div class="heading dark">projects</div>
+            <hr class="short hr-dark">
+            <div class="uk-grid uk-grid-small">
+            <div class="uk-width-1-2">
+                <div class="uk-thumbnail uk-overlay-hover">
+                    <figure class="uk-overlay">
+                    <img src="images/tidyup-thumbnail.jpg" alt="TidyUp">
+                        <a href="tidyup.html">
+                            <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                                <div class="project-caption">
+                                <h2>Tidyup</h2>
+                                <p>Mobile app mockup</p>
+                                </div>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+<!--
+                <a href=“http://www.behance.net” alt="Behance">
+                    <img src="images/tidyup-thumbnail.jpg" class="project-thumbnail" alt="TidyUp">
+                </a>
+-->
+            </div>
+            <div class="uk-width-1-2">
+                <div class="uk-thumbnail uk-overlay-hover">
+                    <figure class="uk-overlay">
+                    <img src="images/berkop-thumbnail.jpg" alt="BerkOp">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                            <div class="project-caption">
+                            <h2>Berkeley Opinion</h2>
+                            <p>Marketing material design</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="uk-width-1-2">
+                <div class="uk-thumbnail uk-overlay-hover">
+                    <figure class="uk-overlay">
+                    <img src="images/veritas-thumbnail.jpg" alt="Veritas">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                            <div class="project-caption">
+                            <h2>Veritas</h2>
+                            <p>Logo design</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="uk-width-1-2">
+                <div class="uk-thumbnail uk-overlay-hover">
+                    <figure class="uk-overlay">
+                    <img src="images/typography-thumbnail.jpg" alt="Working with Typography">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                            <div class="project-caption">
+                            <h2>Working with Typography</h2>
+                            <p>Typography work</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="uk-width-1-2">
+                <div class="uk-thumbnail uk-overlay-hover">
+                    <figure class="uk-overlay">
+                    <img src="images/iphoneography-thumbnail.jpg" alt="iPhoneography">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                            <div class="project-caption">
+                            <h2>iPhoneography</h2>
+                            <p>Gallery</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="uk-width-1-2">
+                <div class="uk-thumbnail uk-overlay-hover">
+                    <figure class="uk-overlay">
+                    <img src="images/calligraphy-thumbnail.jpg" alt="Korean handwriting">
+                        <figcaption class="uk-overlay-panel uk-overlay-background uk-overlay-fade">
+                            <div class="project-caption">
+                            <h2>Calligraphy</h2>
+                            <p>Korean handwriting</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    </section>-->
     </section>
-    </section>
-    <section id="classwork">
+    <section id="coursework">
+        <div class="heading dark">coursework</div>
+        <hr class="short hr-dark">
+        <table class="uk-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul class="uk-list">
+                            <li><img id="bulletpoint" src="images/bullet.png">CS61A: Structure and Interpretation of Computer Programs</li>
+                            <li><img id="bulletpoint" src="images/bullet.png">CS61B: Data Structures</li>
+                            <li><img id="bulletpoint" src="images/bullet.png">CS198: Working with Typography</li>
+                            <li><img id="bulletpoint" src="images/bullet.png">Phil12A: Introduction to Logic</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul class="uk-list">
+                            <li><img id="bulletpoint" src="images/bullet.png">Psych117: Human Neuropsychology</li>
+                            <li><img id="bulletpoint" src="images/bullet.png">Psych164: Social Cognition</li>
+                            <li><img id="bulletpoint" src="images/bullet.png">Psych167AC: Cultural Psychology</li>
+                            <li><img id="bulletpoint" src="images/bullet.png">Psych160: Social Psychology</li>
+                            <li><img id="bulletpoint" src="images/bullet.png">CogSci131: Computational Models of Cognition</li>
+                            <li><img id="bulletpoint" src="images/bullet.png">Neuro129: The Aging Human Brain</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
     <section id="contact">
+        <div class="heading">connect with me!</div>
     </section>
 
 	</body>

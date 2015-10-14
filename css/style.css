@@ -12,6 +12,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 	font-family: 'Oxygen', sans-serif;
 	color: #444444;
 }
+
 .uk-navbar-nav > li > a { font-family: 'Oxygen', sans-serif; }
 
 .uk-navbar .uk-container {
@@ -59,6 +60,9 @@ body, h1, h2, h3, h4, h5, h6, p {
 .uk-navbar-nav > li > a {
 	text-transform: uppercase;
 	font-size: 11pt;
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    transition: all .25s;
 }
 
 .uk-navbar-nav > li:hover > a,
@@ -79,8 +83,9 @@ header {
 }
 
 header .header-content {
-	/*text-align: center;*/
+	text-align: center;
 	width: 100%;
+	text-shadow: 0px 0px 13px #ffffff;
 }
 
 header .header-content .header-content-title {
@@ -95,24 +100,20 @@ header .header-content .header-content-profile {
 	max-width: 800px;
 }
 
-/*header .header-content .header-content-title {
-	text-align: center;
-
-}*/
-
-/*header .header-content .header-content-title .greeting {
-	color: #fff;
-	text-shadow: 0px 0px 10px #f3efee;
-	font-family: 'Satisfy', cursive;
-}*/
-
 header .header-content .header-content-title h1 {
 	color: #fff;
 	text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.7);
 	font-family: 'Satisfy', cursive;
-	font-size: 60px;
-	margin-top: -3em;
+	font-size: 76px;
+	margin-top: -2em;
 }
+
+header .header-content .header-content-profile h2 {
+	color: #fff;
+	opacity: 0.9;
+	font-size: 34px;
+}
+
 
 header .header-content .header-content-profile p {
 	color: #fff;
@@ -122,29 +123,250 @@ header .header-content .header-content-profile p {
 }
 
 hr {
-	max-width: 150px;
-	border-color: #fff;
-	border-width: 2px;
-	margin-top: -2.5em;
+	max-width: 20%;
+	border: none;
+	border-top: 2px solid #fff;
+/*    text-align: center;*/
+    align-self: auto;
+    margin: 0 auto;
+    margin-top: 3em;
+	margin-bottom: 2em;
+}
+
+.short {
+	max-width: 80px;
+	margin-top: -2em;
+	margin-bottom: 1.5em;
+	border: 0;
+	border-top: 2px solid #fff;
+}
+
+.hr-light {
+    border-top: 2px solid #fff;
+}
+
+.hr-dark {
+    border-top: 2px solid #ffc562;
+    
 }
 
 section {
-	padding: 100px 0;
+/*	padding: 100px 0;*/
+    padding: 10%
 }
 
+.container {
+	max-width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.5em;
+}
 
+.container > p {
+    color: #fff;
+}
 
-/*header .header-content {
-	text-align: center;
-	width: 100%;
-	/*text-shadow: 0px 0px 13px #ffffff;*/
-/*}*/
+#about, #project-presentation {
+	background-color: #FAD089;
+}
+
+#contact {
+    background-color: #fad089;
+}
+
+#project-wrapper {
+    background-color: #f4f4f4;
+}
+
+#project-wrapper > img {
+    max-width: 640px;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.heading {
+	font-size: 40px;
+	font-family: 'Satisfy', cursive;
+	line-height: 0px;
+    margin-bottom: 2em;
+    position: relative;
+	margin-top: -.5em;
+	color: #fff;
+}
+
+.dark {
+    color: #444444;
+}
+
+.project-description-name {
+    color: #fff;
+    padding-bottom: 16px;
+    font-size: 54px;
+    font-weight: 600;
+}
+
+.project-description-content {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.uk-grid {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uk-grid:before,
+.uk-grid:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+.uk-grid:after {
+  clear: both;
+}
+
+.uk-width-1-1 {
+  width: 100%;
+}
+
+.uk-width-1-2 {
+  width: 50%;
+}
+
+.uk-grid-small {
+  margin-left: -10px;
+}
+
+.uk-grid-collapse {
+  margin-left: 0;
+}
+.uk-grid-collapse > * {
+  padding-left: 0;
+}
+ Vertical 
+.uk-grid-collapse + .uk-grid-collapse,
+.uk-grid-collapse > .uk-grid-margin,
+.uk-grid-collapse > * > .uk-panel + .uk-panel {
+  margin-top: 0;
+}
+
+.project-caption h2 {
+    margin-top: 20%;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.project-caption p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.uk-thumbnail {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  max-width: 100%;
+  /* 3 */
+/*  box-sizing: border-box;*/
+  /* 3 */
+  margin: 0;
+  /* 4 */
+  padding: 5px;
+  border: none;
+  background: #ffffff;
+}
+/*
+ * Hover state for `a` elements
+ * 1. Apply hover style also to focus state
+ * 2. Needed for caption
+ * 3. Remove default focus style
+ */
+a.uk-thumbnail:hover,
+a.uk-thumbnail:focus {
+  border-color: #aaaaaa;
+  background-color: #ffffff;
+  /* 2 */
+  text-decoration: none;
+  /* 3 */
+  outline: none;
+}
+
+.uk-overlay {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  max-width: 100%;
+  /* 4 */
+  vertical-align: middle;
+  /* 5 */
+  overflow: hidden;
+  /* 6 */
+  -webkit-transform: translateZ(0);
+  /* 7 */
+  margin: 0;
+}
+
+.uk-overlay-fade
+[class*='uk-overlay-slide'] {
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  transition-property: opacity transform filter;
+}
+.uk-overlay-active .uk-overlay-fade,
+.uk-overlay-active .uk-overlay-scale,
+.uk-overlay-active .uk-overlay-spin,
+.uk-overlay-active [class*='uk-overlay-slide'] {
+  transition-duration: 0.8s;
+}
+/*
+ * Fade
+ */
+.uk-overlay-fade {
+  opacity: 0.7;
+}
+.uk-overlay-hover:hover .uk-overlay-fade,
+.uk-overlay-active .uk-active > .uk-overlay-fade {
+  opacity: 1;
+}
+
+.uk-table {
+  margin-top: 10px;
+}
+.uk-table th,
+.uk-table td {
+  width: 50%;
+  padding: 8px 8px;
+  font-size: 15px;
+  line-height: 25px;
+}
 
 @media (min-width: 768px) {
 	.header-content {
 		position: absolute;
 		top: 50%;
 	}
+}
+
+#bulletpoint {
+    max-width: 12px;
+    margin-bottom: 2px;
+    margin-right: 3px;
 }
 
 .uk-button {
@@ -159,6 +381,7 @@ section {
   /* 5 */
   font: inherit;
   color: #444444;
+  background-color: #fff;
   /* 6 */
   text-transform: none;
   /* 7 */
@@ -188,8 +411,9 @@ section {
   text-decoration: none;
 }
 
-.uk-button:active,
-.uk-button.uk-active {
-  background-color: #dddddd;
-  color: #444444;
-}
+
+/*.uk-button:active,*/
+/*.uk-button.uk-active {*/
+/*  background-color: #dddddd;*/
+/*  color: #444444;*/
+/*}*/
