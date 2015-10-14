@@ -125,7 +125,7 @@ header .header-content .header-content-profile p {
 hr {
 	max-width: 20%;
 	border: none;
-	border-top: 2px solid #fff;
+/*	border-top: 2px solid #fff;*/
 /*    text-align: center;*/
     align-self: auto;
     margin: 0 auto;
@@ -146,7 +146,7 @@ hr {
 }
 
 .hr-dark {
-    border-top: 2px solid #ffc562;
+    border-top: 2px solid #955251;
     
 }
 
@@ -166,14 +166,15 @@ section {
 
 .container > p {
     color: #fff;
+    text-shadow: 1px 1px 1px #883d3c;
 }
 
-#about, #project-presentation {
-	background-color: #FAD089;
+#about, #project-presentation, #contact {
+	background-color: #955251;
 }
 
-#contact {
-    background-color: #fad089;
+#portfolio {
+    background-color: #f2f2f2;;
 }
 
 #project-wrapper {
@@ -188,7 +189,7 @@ section {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.heading {
+.container .heading {
 	font-size: 40px;
 	font-family: 'Satisfy', cursive;
 	line-height: 0px;
@@ -196,21 +197,26 @@ section {
     position: relative;
 	margin-top: -.5em;
 	color: #fff;
+/*    text-shadow: 1px, 1px, 1px, #883d3c;*/
 }
 
-.dark {
+.container .dark {
     color: #444444;
+    text-shadow: none;
+}
+
+.project-description h1, p {
+    color: #fff;
+    text-shadow: 1px 1px 1px #883d3c;
 }
 
 .project-description-name {
-    color: #fff;
     padding-bottom: 16px;
-    font-size: 54px;
+    font-size: 56px;
     font-weight: 600;
 }
 
 .project-description-content {
-    color: #fff;
     font-size: 18px;
     line-height: 30px;
 }
@@ -285,9 +291,9 @@ section {
   /* 3 */
   margin: 0;
   /* 4 */
-  padding: 5px;
+  padding-bottom: 15px;
   border: none;
-  background: #ffffff;
+  background: none;
 }
 /*
  * Hover state for `a` elements
@@ -354,6 +360,7 @@ a.uk-thumbnail:focus {
   padding: 8px 8px;
   font-size: 15px;
   line-height: 25px;
+  color: #444444;
 }
 
 @media (min-width: 768px) {
@@ -363,11 +370,10 @@ a.uk-thumbnail:focus {
 	}
 }
 
-#bulletpoint {
-    max-width: 12px;
-    margin-bottom: 2px;
-    margin-right: 3px;
+ul {
+    list-style-image: url('../images/bullet.png');
 }
+
 
 .uk-button {
   /* 1 */
