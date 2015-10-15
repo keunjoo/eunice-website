@@ -170,12 +170,17 @@ section {
 }
 
 .container > p {
+    display: block;
     color: #fff;
     text-shadow: 1px 1px 1px #883d3c;
 }
 
 #about, #project-presentation, #contact {
 	background-color: #955251;
+}
+
+#contact {
+    padding-top: 7em;
 }
 
 #portfolio {
@@ -210,6 +215,28 @@ section {
 .container .dark {
     color: #444444;
     text-shadow: none;
+}
+
+.contact-container {
+    display: block;
+    margin-top: 1em;
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-container > a > img {
+    max-width: 40px;
+}
+
+.contact-container > a> p {
+    margin-top: 3px;
+}
+
+.contact-container > a {
+    outline: none;
+    text-decoration: none;
 }
 
 .project-description h1, p {
@@ -294,6 +321,7 @@ section {
 .project-caption p {
     color: #fff;
     font-size: 16px;
+    text-shadow: none;
 }
 
 .uk-thumbnail {
@@ -387,6 +415,7 @@ a.uk-thumbnail:focus {
 
 ul {
     list-style-image: url('../images/bullet.png');
+    text-align: left;
 }
 
 .portfolio-nav {
