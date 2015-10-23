@@ -39,6 +39,7 @@ body, h1, h2, h3, h4, h5, h6, p {
     box-sizing: border-box;
     display: block;
     float: left;
+    -ms-interpolation-mode: bicubic;
 }
 
 .uk-navbar {
@@ -266,6 +267,7 @@ section {
     max-width: 600px;
     display: inline-block;
     padding: 20px;
+    -ms-interpolation-mode: bicubic;
 }
 
 .uk-grid {
@@ -342,6 +344,7 @@ section {
   padding-bottom: 15px;
   border: none;
   background: none;
+  -ms-interpolation-mode: bicubic;
 }
 /*
  * Hover state for `a` elements
