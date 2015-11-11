@@ -64,10 +64,7 @@ section {
     display: block;
     background-color: rgba(256, 256, 256, 1);
     padding: 1em;
-/*
-    border-color: #eee;
-    border-bottom: 1px;
-*/
+    border-bottom: 1px solid #CDCDCD;
 }
 
 .uk-navbar-nav {
@@ -102,7 +99,7 @@ header {
 	position: relative;
 	width: 100%;
 	height: 70%;
-	background: url(../images/splash.jpg) no-repeat center 30% fixed;
+	background: url(../images/splash.jpg) no-repeat center center;
 	background-size: cover;
 }
 
@@ -117,16 +114,16 @@ header .header-content {
 }
 
 header .header-content .header-content-title {
-    margin-left: 1em;
+    margin-left: 10%;
 	margin-right: auto;
-    margin-top: -6em;
+    margin-top: auto;
     margin-bottom: 2em;
 	max-width: 1000px;
 }
 
 header .header-content .header-content-profile {
 	margin-top: auto;
-    margin-left: 1em;
+    margin-left: 10%;
 	margin-right: auto;
 	max-width: 800px;
 }
@@ -141,7 +138,7 @@ header .header-content .header-content-title h1 {
 
 header .header-content .header-content-profile h2 {
 	color: #fff;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
 	font-size: 32px;
 }
 
@@ -210,7 +207,7 @@ section {
 }
 
 #contact {
-    padding-top: 7em;
+    padding: auto;
 }
 
 #portfolio {
