@@ -26,13 +26,30 @@ body, h1, h2, h3, h4, h5, h6, p {
 /* Large screen and bigger */
 @media (min-width: 1220px) {
   .uk-container {
-/*    max-width: 1200px;*/
     padding: 0 35px;
     margin-left: auto;
     margin-right: auto;
   }
 }
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
 
+/*
+ * Corrects 'block' display not defined in IE 8/9.
+ */
+article,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
 
 .logo {
 	height: 40px;
@@ -192,16 +209,6 @@ section {
     background-color: #f4f4f4;
 }
 
-/*
-#project-wrapper > img {
-    max-width: 640px;
-    padding: 20px;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-*/
-
 .container .heading {
 	font-size: 40px;
 	font-family: 'Satisfy', cursive;
@@ -298,6 +305,29 @@ section {
 
 .uk-width-1-2 {
   width: 50%;
+}
+
+/* Phone landscape and bigger */
+@media (min-width: 480px) {
+  /* Whole */
+  .uk-width-small-1-1 {
+    width: 100%;
+  }
+  /* Halves */
+  .uk-width-small-1-2 {
+    width: 50%;
+  }
+}
+/* Tablet and bigger */
+@media (min-width: 768px) {
+  /* Whole */
+  .uk-width-medium-1-1 {
+    width: 100%;
+  }
+  /* Halves */
+  .uk-width-medium-1-2 {
+    width: 50%;
+  }
 }
 
 .uk-grid-small {
