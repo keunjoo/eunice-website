@@ -22,6 +22,7 @@ body, h1, h2, h3, h4, h5, h6, p {
   /*padding: 0 25px;*/
   padding-left: 15px;
   padding-right: 15px;
+    
 }
 /* Large screen and bigger */
 @media (min-width: 1220px) {
@@ -60,17 +61,19 @@ section {
 }
 
 .uk-navbar {
-  background-color: transparent;
-  color: #fff;
-  padding: 1em;
+    display: block;
+    background-color: rgba(256, 256, 256, 1);
+    padding: 1em;
+/*
+    border-color: #eee;
+    border-bottom: 1px;
+*/
 }
 
 .uk-navbar-nav {
-	margin: 0;
+    margin: 0;
 	list-style: none;
 	float: right;
-/*    position: ;*/
-	background-color: transparent;
 }
 
 .uk-navbar-nav > li {
@@ -99,42 +102,45 @@ header {
 	position: relative;
 	width: 100%;
 	height: 70%;
-	background-image: url(../images/IMG_3464.jpg);
+	background-image: url(../images/splash.jpg);
 	background-position: center;
 	background-size: cover;
 }
 
 header .header-content {
-	text-align: center;
+	text-align: left;
 	width: 100%;
 	text-shadow: 0px 0px 13px #ffffff;
+    padding: 20px;
 }
 
 header .header-content .header-content-title {
-	margin-left: auto;
+	margin-left: 1em;
 	margin-right: auto;
-    margin-top: 1em;
+    margin-top: -6em;
+    margin-bottom: 2em;
 	max-width: 1000px;
 }
 
 header .header-content .header-content-profile {
-	margin-left: auto;
+	margin-top: auto;
+    margin-left: 1em;
 	margin-right: auto;
 	max-width: 800px;
 }
 
 header .header-content .header-content-title h1 {
 	color: #fff;
-	text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.7);
+	text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
 	font-family: 'Satisfy', cursive;
-	font-size: 76px;
+	font-size: 72px;
 	margin-top: -2em;
 }
 
 header .header-content .header-content-profile h2 {
 	color: #fff;
-	opacity: 0.9;
-	font-size: 34px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+	font-size: 32px;
 }
 
 
@@ -170,7 +176,11 @@ hr {
 
 .hr-dark {
     border-top: 2px solid #955251;
-    
+}
+
+.hr-divider {
+    border-color: #eee;
+    margin: 0;
 }
 
 section {
