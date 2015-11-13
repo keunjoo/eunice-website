@@ -12,37 +12,39 @@
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="js/uikit.min.js"></script>
+        <link rel="stylesheet" href="css/components/sticky.css"/>
+        <script src="js/components/sticky.js"></script>
 
 		<link rel="stylesheet" href="css/style.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Satisfy|Oxygen' rel='stylesheet' type='text/css'>
 	</head>
 	<body id="page-top">
-		<nav class="uk-navbar">
+		<nav class="uk-navbar" data-uk-sticky>
 			<div class="uk-container">
 				<a class="logo" href="index.html">
 					<img src="images/eunice-logo.png" alt="Eunice Kim" width="49" height="35">
 				</a>
 				<ul class="uk-navbar-nav">
 					<li>
-            <a class="uk-button" href="index.html">About</a>
-          </li>
+            <a href="index.html" class="uk-button" data-uk-smooth-scroll>About</a>
+                    </li>
 <!--
           <li>
             <a class="uk-button" href="#interests" data-uk-smooth-scroll>Interests</a>
           </li>
 -->
-          <li>
-            <a class="uk-button" href="index.html#portfolio">Portfolio</a>
-          </li>
-          <li>
-          	<a class="uk-button" href="index.html#coursework">Coursework</a>
-          </li>
-          <li>
-            <a class="uk-button" href="index.html#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+                  <li>
+                    <a class="uk-button" href="index.html#portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="uk-button" href="index.html#coursework">Coursework</a>
+                  </li>
+                  <li>
+                    <a class="uk-button" href="index.html#contact">Contact</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
     <section id="project-presentation">
         <div class="project-description">
             <h1 class="project-description-name">Berkeley Opinion</h1>

@@ -463,7 +463,10 @@ a.uk-thumbnail:focus {
 }
 
 .uk-table {
-  margin-top: 10px;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: auto;
+    margin-bottom: 15px;
 }
 .uk-table th,
 .uk-table td {
@@ -472,6 +475,12 @@ a.uk-thumbnail:focus {
   font-size: 15px;
   line-height: 25px;
   color: #444444;
+}
+
+@media (min-width: 768px) {
+    .uk-table {
+        
+    }
 }
 
 @media (min-width: 768px) {
