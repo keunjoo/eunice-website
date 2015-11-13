@@ -13,6 +13,10 @@ body, h1, h2, h3, h4, h5, h6, p {
 	color: #444444;
 }
 
+img {
+    max-width: 100%;
+}
+
 .uk-navbar-nav > li > a { font-family: 'Oxygen', sans-serif; }
 
 .uk-navbar .uk-container {
@@ -296,6 +300,23 @@ section {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+  /* Horizontal */
+  .uk-grid {
+    margin-left: -35px;
+  }
+  .uk-grid > * {
+    padding-left: 35px;
+  }
+  /* Vertical */
+  .uk-grid + .uk-grid,
+  .uk-grid-margin,
+  .uk-grid > * > .uk-panel + .uk-panel {
+    margin-top: 35px;
+  }
 }
 
 .uk-grid:before,
