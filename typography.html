@@ -1,74 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eunice Kim | UI/UX Designer</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700, Arvo:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+  </head>
 
-		<title>Eunice Kim | UI/UX Design Enthusiast</title>
+  <body>
+    <nav class="sticky-nav">
+      <a href="index.html" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+    </nav>
+    
 
-		<!-- UI Kit -->
-        <link rel="stylesheet" href="css/uikit.min.css"/> 
-		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script src="js/uikit.min.js"></script>
-        <link rel="stylesheet" href="css/components/sticky.css"/>
-        <script src="js/components/sticky.js"></script>
+     <div class="row medium-12 large-12 columns">
+         <div id="project-cover">
+             <div class="project-title">
+                 Working with Typography
+             </div>
+             <div class="project-type">
+             Graphic Design
+             </div>
+             <div class="project-summary">
+                 Working with Typography DeCal is the first graphic design course I've ever taken. Through class assignments, I explored and practiced various aspects of typography such as lettering, typefaces, visual hierarchy and grid systems.
+             </div>
+         </div>     
+     </div>
+     <div id="project-image"><img class="project-img" src="img/proj/typo/cover.jpg"></div>
+     <div class="row small-10 large-8 columns">
+       <div class="project-explanation">
+          <div class="project-section">
+              <div class="project-subheading">Bookcover Design</div>
+              <img class="project-visual" src="img/proj/typo/bookcover-mockup.jpg">
+          </div>
+          <div class="project-section">
+              <div class="project-subheading">Book Design</div>
+              <img class="project-visual" src="img/proj/typo/book-cover.jpg">
+              <img class="project-visual" src="img/proj/typo/book-content1.jpg">
+              <img class="project-visual" src="img/proj/typo/book-content2.jpg">
+          </div>
+          <div class="project-section">
+              <div class="project-subheading">Movie Poster Redesign</div>
+              <img class="project-visual" src="img/proj/typo/poster-inception.jpg">
+          </div>
+          <div class="project-section">
+              <div class="project-subheading">Handlettering</div>
+              <img class="project-visual" src="img/proj/typo/handlettering.jpg">
+          </div>   
+          <div class="project-section">
+              <div class="project-subheading">Table of Contents Redesign</div>
+              <img class="project-visual" src="img/proj/typo/toc.jpg">
+          </div>
+       </div>
+     </div>
+     
+     <div class="footer-nav">
+      <div class="row large-12 columns">
+       <div class="medium-6 large-6 columns">
+           <a href="/berkop.html">
+               <div class="icon-wrap">
+                 <img id="nav-arrow-prev" src="img/project-prev.svg" alt="">
+                 <span class="prev-proj">Previous Project</span>
+                 <h5 id="prev-proj-title">Berkeley Opinion</h5>
+               </div>
+           </a>
+       </div>
+       <div class="medium-6 large-6 columns">
+           <a href="">
+               <div class="icon-wrap">
+                   <img id="nav-arrow-next" src="img/project-next.svg" alt="">
+                   <span class="next-proj">Next Project</span>
+                   <h5 id="next-proj-title">iPhoneography</h5>
+               </div>
+           </a>
+       </div>
+      </div>
+     </div>
+     
+  
+  <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/typed.js"></script>
+    <script>
+      $(".toggle-menu").on("click", function(){
+          $("#menu").toggleClass("is-open");
+      });
+        
+      var  mn = $(".sticky-nav");
+      mns = "sticky-nav-scrolled";
+      hdr = $('project-explanation').height();
+      
+      $(window).scroll(function() {
+          if( $(this).scrollTop() > hdr ) {
+              mn.addClass(mns);
+          } else {
+              mn.removeClass(mns);
+          }
+      });
 
-		<link rel="stylesheet" href="css/style.css"/>
-		<link href='https://fonts.googleapis.com/css?family=Satisfy|Oxygen' rel='stylesheet' type='text/css'>
-	</head>
-	<body id="page-top">
-		<nav class="uk-navbar" data-uk-sticky>
-			<div class="uk-container">
-				<a class="logo" href="index.html">
-					<img src="images/eunice-logo.png" alt="Eunice Kim" width="49" height="35">
-				</a>
-				<ul class="uk-navbar-nav">
-					<li>
-            <a href="index.html" class="uk-button" data-uk-smooth-scroll>About</a>
-                    </li>
-<!--
-          <li>
-            <a class="uk-button" href="#interests" data-uk-smooth-scroll>Interests</a>
-          </li>
--->
-                  <li>
-                    <a class="uk-button" href="index.html#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                    <a class="uk-button" href="index.html#coursework">Coursework</a>
-                  </li>
-                  <li>
-                    <a class="uk-button" href="index.html#contact">Contact</a>
-                  </li>
-                </ul>
-            </div>
-        </nav>
-    <section id="project-presentation">
-        <div class="project-description">
-            <h1 class="project-description-name">Working with Typography</h1>
-            <p class="project-description-content">Working with Typography DeCal is my first ever graphic design course.<br> Through class assignments, I have explored and practiced various aspects of typography<br> such as lettering, characteristics of typefaces, hierarchy of text and grid systems.</p>
-        </div>
-    </section>
-    <section id="project-wrapper">
-        <div class="project-image">
-            <img src="images/projects/typo/inception_redesign.jpg" alt="Movie Poster Redesign: Inception">
-        </div>
-        <div class="project-image">
-            <img src="images/projects/typo/joanna_poster.jpg" alt="Joanna Typeface Poster">
-        </div>
-        <div class="project-image">
-            <img src="images/projects/typo/handlettering.jpg" alt="Hand Lettering: Food for Thought">
-        </div>
-        <div class="project-image">
-            <img src="images/projects/typo/toc_redesign.jpg" alt="ToC Redesign: The Design of Everyday Things">
-        </div>
-        <p class="portfolio-nav">
-            <a href="index.html#portfolio">
-                    <button class="fill">Back to portfolio</button>
-                </a>
-        </p>
-    </section>
-    </body>
+      $(document).ready(function() {
+          $('body').css('display', 'none');
+          $('body').fadeIn(500);
+          $('.link').click(function() {
+              event.preventDefault();
+              newLocation = this.href;
+              $('body').fadeOut(1000, newpage);
+          });
+          function newpage() {
+              window.location = newLocation;
+          }});
+        
+      $(document).ready(function(){
+          $('#nav-icon').click(function(){
+              $(this).toggleClass('open');
+          });
+      });
+    </script>
+  </body>
 </html>
