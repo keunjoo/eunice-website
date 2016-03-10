@@ -21,73 +21,55 @@
      <div class="row medium-12 large-12 columns">
          <div id="project-cover">
              <div class="project-title">
-                 Working with Typography
+                 iPhoneography
              </div>
              <div class="project-type">
-             Graphic Design
+             Digital Photography
              </div>
              <div class="project-summary">
-                 Working with Typography DeCal is the first graphic design course I've ever taken. Through class assignments, I explored and practiced various aspects of typography such as lettering, typefaces, visual hierarchy and grid systems.
+                 I believe the iPhone camera is very powerful and totally capable of quality photography. I practice my belief on a regular basis. 
              </div>
          </div>     
      </div>
-     <div id="project-image"><img class="project-img" src="img/proj/typo/cover.jpg"></div>
+<!--     <div id="project-image"><img class="project-img" src="img/proj/typo/cover.jpg"></div>-->
      <div class="row small-10 large-8 columns">
        <div class="project-explanation">
-          <div class="project-section">
-              <div class="project-subheading">Bookcover Design</div>
-              <img class="project-visual" src="img/proj/typo/bookcover-mockup.jpg">
+           <div id="instafeed"></div>
+<!--
+          <div class="button-wrapper">
+              <div id="load-more">Load more!</div>
           </div>
-          <div class="project-section">
-              <div class="project-subheading">Book Design</div>
-              <img class="project-visual" src="img/proj/typo/book-cover.jpg">
-              <img class="project-visual" src="img/proj/typo/book-content1.jpg">
-              <img class="project-visual" src="img/proj/typo/book-content2.jpg">
-          </div>
-          <div class="project-section">
-              <div class="project-subheading">Movie Poster Redesign</div>
-              <img class="project-visual" src="img/proj/typo/poster-inception.jpg">
-          </div>
-          <div class="project-section">
-              <div class="project-subheading">Handlettering</div>
-              <img class="project-visual" src="img/proj/typo/handlettering.jpg">
-          </div>   
-          <div class="project-section">
-              <div class="project-subheading">Table of Contents Redesign</div>
-              <img class="project-visual" src="img/proj/typo/toc.jpg">
-          </div>
+-->
        </div>
+     </div>
+     <div class="row">
+         <div class="button-wrapper">
+              <div id="load-more">Load more!</div>
+          </div>
      </div>
      
      <div class="footer-nav">
       <div class="row large-12 columns">
        <div class="medium-6 large-6 columns">
-           <a href="/berkop.html">
+           <a href="/typography.html">
                <div class="icon-wrap">
                  <img id="nav-arrow-prev" src="img/project-prev.svg" alt="">
                  <span class="prev-proj">Previous Project</span>
-                 <h5 id="prev-proj-title">Berkeley Opinion</h5>
+                 <h5 id="prev-proj-title">Working with Typography</h5>
                </div>
            </a>
        </div>
-       <div class="medium-6 large-6 columns">
-           <a href="/iphoneography.html">
-               <div class="icon-wrap">
-                   <img id="nav-arrow-next" src="img/project-next.svg" alt="">
-                   <span class="next-proj">Next Project</span>
-                   <h5 id="next-proj-title">iPhoneography</h5>
-               </div>
-           </a>
-       </div>
+       <div class="medium-6 large-6 columns"></div>
       </div>
      </div>
      
   
-  <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/typed.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script>
       $(".toggle-menu").on("click", function(){
           $("#menu").toggleClass("is-open");
@@ -122,6 +104,28 @@
               $(this).toggleClass('open');
           });
       });
+    </script>
+    <script type="text/javascript">
+     var loadButton = document.getElementById('load-more');
+     var userFeed = new Instafeed({
+     get: 'user',
+     userId: '2296024361',
+     accessToken: '2296024361.467ede5.2bc488c2605f49ce80b188585f4d06f8',
+     template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+     after: function() {
+         if (!this.hasNext()) {
+            loadButton.setAttribute('disabled','disabled');
+         }
+     },
+     });
+        
+    // bind the load more button
+    loadButton.addEventListener('click', function() {
+        userFeed.next();
+    });
+        
+    // run my feed
+    userFeed.run();
     </script>
   </body>
 </html>

@@ -265,14 +265,34 @@ h2.h-subtitle {
     }
 }
 
+.button-resume {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  padding: 1em 1em;
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  background-color: #424242;
+  color: #fff;
+}
+  .button-resume:hover, .button-resume:focus {
+    background-color: #b3aac3;
+    color: #fff; }
+
 #project-cover {
     padding: 5em 1em;
-/*    background-color: #e4e4e4; for testing's sake*/
 }
 
 .project-title {
     font-family: 'Arvo', serif;
     font-size: 60px;
+    line-height: 65px;
 }
 
 .project-type {
@@ -346,17 +366,84 @@ h2.h-subtitle {
     }
 }
 
+#instafeed {
+    max-width: 1024px;
+    text-align: center;
+}
+
+#instafeed a {
+  padding:5px;
+  margin:5px;
+  border:1px solid #e2e2e2;
+  background-color: #fff;
+  display:inline-block;
+  position:relative;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+#instafeed img {
+ max-width: 100%;
+ display: block;
+ position: relative;
+ z-index: 10;
+}
+
+
+#instafeed a:hover {
+ -webkit-transform: scale(1.5);
+ -moz-transform: scale(1.5);
+ -ms-transform: scale(1.5);
+ transform: scale(1.5);
+ z-index: 30;
+}
+
+.button-wrapper {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#load-more {
+  display: inline-block;
+  position: absolute;
+  left: 45%;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  padding: 1em;
+  margin: 0 0 1rem 0;
+  font-size: 16px;
+  background-color: #424242;
+  color: #fff;
+}
+  #load-more:hover, #load-more:focus {
+    background-color: #b3aac3;
+    color: #fff; }
+
+/* Footer navigation style
+*/
 
 .icon-wrap {
 /*    position: relative;*/
     padding: 15px;
     display: block;
+    opacity: 0.6;
+}
+.icon-wrap:hover {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.99;
 }
 
 #nav-arrow-prev, #nav-arrow-next {
     width: 35px;
     height: 35px;
-    color: #424242;
+/*    opacity: .6;*/
     margin-top: 24px;
 }
 
@@ -373,13 +460,19 @@ h2.h-subtitle {
     font-weight: 700;
     text-transform: uppercase;
     color: #b3aac3;
-/*    margin-bottom: 3em;*/
 }
 
 .prev-proj {
     float: left;
     margin-top: 12px;
 }
+/*
+
+.prev-proj:hover, .next-proj:hover {
+    transition: all 0.4s ease-in-out;
+    color: #786f88;
+}
+*/
 
 @media screen and (max-width: 768px) {
     #nav-arrow-prev {
@@ -422,4 +515,5 @@ h2.h-subtitle {
 
 .footer-nav {
     padding: 20px;
+    margin-top: 3em;
 }
