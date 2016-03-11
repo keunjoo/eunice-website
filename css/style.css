@@ -2,7 +2,6 @@ body, h1, h2, h3, h4, h5, h6, p {
 	font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #424242;
-/*    letter-spacing: 1px;*/
 }
 
 .background-overlay {
@@ -15,14 +14,12 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 .toggle-menu {
-/*  position: relative;*/
     position: fixed;
-/*  font-size: 3em;*/
-  z-index: 1001;
-  color: #333;
-  left: 1.5rem;
-  top: 1.5rem;
-  transition: all 0.4s ease-in-out;
+    z-index: 1001;
+    color: #333;
+    left: 1.5rem;
+    top: 1.5rem;
+    transition: all 0.4s ease-in-out;
 }
 .toggle-menu:hover {
     transition: all 0.4s ease-in-out;
@@ -70,7 +67,6 @@ body, h1, h2, h3, h4, h5, h6, p {
   .overlay-menu.is-open ~ .toggle-menu {
     display: inline-block;
     transition: all 0.7s ease-in-out;
-/*    transform: rotate(135deg);*/
     color: white; }
 
 /* nav icon 
@@ -199,9 +195,14 @@ body, h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 768px) {
+    .toggle-menu {
+        left: 12px!important;
+        top: 12px!important;
+    }
     .logo {
         width: 50px;
         margin-top: 12px!important;
+        margin-right: 12px!important;
     }
     .sticky-nav {
         position: relative;
@@ -306,8 +307,7 @@ h2.h-subtitle {
 }
 
 .project-title {
-    font-family: 'Arvo', serif;
-    font-weight: 400;
+    font-family: 'Bree Serif', serif;
     font-size: 60px;
     line-height: 65px;
 }
@@ -342,9 +342,8 @@ h2.h-subtitle {
 }
 
 .project-subheading {
-    font-family: 'Arvo', serif;
+    font-family: 'Bree Serif', serif;
     font-size: 30px;
-    font-weight: 700;
     margin-top: 30px;
     margin-bottom: 10px;
     letter-spacing: 0px;
