@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <nav class="sticky-nav">
+    <nav class="nav-down">
       <a href="index.html" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
     </nav>
     
@@ -34,8 +34,14 @@
      <div class="row small-12 medium-10 large-10 columns">
        <div id="instafeed"></div>
        <div class="button-wrapper">
-              <div id="load-more">Load more</div>
-          </div>
+         <div id="load-more">Load more</div>     
+       </div>
+       <div id="arrow-wrapper">
+           <a href="#instafeed">
+              <img id="page-up" src="img/up-arrow.png">
+              <h5>Top of gallery</h5>
+           </a>
+       </div>
      </div>
      <div class="footer-nav">
       <div class="row large-12 columns">
@@ -64,17 +70,38 @@
           $("#menu").toggleClass("is-open");
       });
         
-      var  mn = $(".sticky-nav");
-      mns = "sticky-nav-scrolled";
-      hdr = $('project-explanation').height();
-      
-      $(window).scroll(function() {
-          if( $(this).scrollTop() > hdr ) {
-              mn.addClass(mns);
-          } else {
-              mn.removeClass(mns);
-          }
-      });
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('nav').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            if (st > lastScrollTop && st > navbarHeight){
+                $('nav').removeClass('nav-down').addClass('nav-up');
+            } else {
+                if(st + $(window).height() < $(document).height()) {
+                    $('nav').removeClass('nav-up').addClass('nav-down');
+//                    $('nav').addClass('nav-shadow');
+                }
+            }
+            lastScrollTop = st;
+        };
 
       $(document).ready(function() {
           $('body').css('display', 'none');
@@ -96,6 +123,8 @@
     </script>
     <script type="text/javascript">
      var loadButton = document.getElementById('load-more');
+     var doneLoading = document.getElementById('arrow-wrapper');
+     var doneButton = document.getElementById('page-up');
      var userFeed = new Instafeed({
      get: 'user',
      userId: '2296024361',
@@ -105,6 +134,8 @@
          if (!this.hasNext()) {
             loadButton.setAttribute('disabled','disabled');
             loadButton.style.visibility='hidden';
+            doneLoading.style.visibility='visible';
+            doneButton.style.visibility='visible';
          }
      },
      });

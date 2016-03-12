@@ -13,11 +13,9 @@
   </head>
 
   <body>
-    <nav class="sticky-nav">
+    <nav class="nav-down">
       <a href="index.html" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
-    </nav>
-    
-
+    </nav>    
      <div class="row medium-12 large-12 columns">
          <div id="project-cover">
              <div class="project-title">
@@ -122,17 +120,51 @@
           $("#menu").toggleClass("is-open");
       });
         
-      var  mn = $(".sticky-nav");
-      mns = "sticky-nav-scrolled";
-      hdr = $('project-explanation').height();
-      
-      $(window).scroll(function() {
-          if( $(this).scrollTop() > hdr ) {
-              mn.addClass(mns);
-          } else {
-              mn.removeClass(mns);
-          }
-      });
+//      var  mn = $(".sticky-nav");
+//      mns = "sticky-nav-scrolled";
+//      hdr = $('project-explanation').height();
+//      
+//      $(window).scroll(function() {
+//          if( $(this).scrollTop() > hdr ) {
+//              mn.addClass(mns);
+//          } else {
+//              mn.removeClass(mns);
+//          }
+//      });
+        
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('nav').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            if (st > lastScrollTop && st > navbarHeight){
+                $('nav').removeClass('nav-down').addClass('nav-up');
+            } else {
+                if(st + $(window).height() < $(document).height()) {
+                    $('nav').removeClass('nav-up').addClass('nav-down');
+//                    $('nav').addClass('nav-shadow');
+                }
+            }
+            lastScrollTop = st;
+        };
+        
 
       $(document).ready(function() {
           $('body').css('display', 'none');
