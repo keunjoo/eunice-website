@@ -331,6 +331,30 @@ h2.h-subtitle {
     background-color: #b3aac3;
     color: #fff; }
 
+.contact-overlay {
+    background: url("../img/contact-overlay.jpg") no-repeat center;
+    background-size: cover;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    z-index: -1000;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-overlay {
+        display: none!important;
+    }
+}
+
+a#contact {
+    color: inherit;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 3px solid #b3aac3;
+}
+
 #project-cover {
     padding: 5em 1em;
 }

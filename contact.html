@@ -12,8 +12,9 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
   </head>
   <body>
-      <div class="profile-overlay"></div>
+      <div class="contact-overlay"></div>
       <nav role="navigation">
+<!--
       <ul id="menu" class="overlay-menu vertical menu" data-accordion-menu>
         <li><a href="/index.html">home</a></li>
         <li><a href="#">work</a>
@@ -25,7 +26,7 @@
             <li id="work-subitem">...</li>
             </ul>
         </li>
-        <li><a href="/contact.html">contact</a></li>
+        <li><a href="#">contact</a></li>
       </ul>
           <a href="#menu" class="toggle-menu">
              <div id="nav-icon">
@@ -35,14 +36,17 @@
               <span></span>
             </div>  
           </a>
+-->
           <a href="index.html" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
     </nav>
       <div class="about">
-          <img id="profile-thumbnail" src="img/profile-thumbnail.jpg" alt="Eunice Kim">
-          <h2>Hi, I'm Eunice.</h2>
-          <p>I am a fourth-year <b>Cognitive Science</b> major at UC Berkeley, with a passion for functional aesthetics. I believe that <b>empathy</b> is the key component of good design, and good design is an equilateral triangle of <b>functionality, aesthetics and user experience</b>. I am always intrigued by human cognition and behavior, and this curiosity translates into my appetite for that perfect, equilateral triangle.</p>
-          <p>Design and academics aside, I like exploring new cafes and bars, going on adventures in the city, and watching movies multiple times <span class="side-note">(I watched Inception 8 times and The Shawshank Redemption 4 times.)</span>. I am particularly obsessed with sunsets, nighttimes and cityscapes—any combination of these is enough to get me extremely excited. I’ve been working on a (very) long-term project of plowing through IMDb’s Top 250 movies list.</p>
-          <a href="resume.pdf"><div class="button-resume">see my résumé</div></a>
+          <h2>Let's stay connected!</h2>
+          <p>Do you have an internship opportunity for me to practice my passion for good design?<br>
+          Do you like to talk about new design trends?<br>
+          Want to discuss which font is becoming the next Helvetica?<br>
+          Got an idea for a cool project?</p>
+          <p>Shoot me an <a id="contact" href="mailto:eunice.eunjoo.kim@gmail.com"><u>email</u></a>!<br>
+          I can be found on <a id="contact" href="https://www.linkedin.com/pub/eunice-eunjoo-kim/102/aa9/344"><u>LinkedIn</u></a> and <a id="contact" href="https://www.behance.net/euniceejkim"><u>Behance</u></a>, too.</p>
       </div>
     
 
@@ -56,7 +60,7 @@
       $(".toggle-menu").on("click", function(){
           $("#menu").toggleClass("is-open");
       });
-        
+
       $(document).ready(function() {
           $('body').css('display', 'none');
           $('body').fadeIn(500);
