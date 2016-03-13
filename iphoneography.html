@@ -37,8 +37,8 @@
          <div id="load-more">Load more</div>     
        </div>
        <div id="arrow-wrapper">
-           <a href="#instafeed">
-              <img id="page-up" src="img/up-arrow.png">
+           <a href="#project-cover">
+              <img id="nav-arrow-up" src="img/project-prev.svg" alt="">
               <h5>Top of gallery</h5>
            </a>
        </div>
@@ -120,6 +120,21 @@
               $(this).toggleClass('open');
           });
       });
+        
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
     </script>
     <script type="text/javascript">
      var loadButton = document.getElementById('load-more');

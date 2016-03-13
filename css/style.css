@@ -35,7 +35,7 @@ body, h1, h2, h3, h4, h5, h6, p {
   right: 0;
   width: 100%;
   margin: 0;
-  padding-top: 5em;
+  padding-top: 4em;
   height: auto;
   overflow: scroll;
   opacity: 0;
@@ -47,7 +47,6 @@ body, h1, h2, h3, h4, h5, h6, p {
   transition: all 500ms cubic-bezier(1, -0.4, 0.44, 0.985);
 }
   .overlay-menu li {
-    padding-top: 1em;
     font-size: 1.5em;
 }
   .overlay-menu a {
@@ -55,7 +54,6 @@ body, h1, h2, h3, h4, h5, h6, p {
     color: #fff;
     font-weight: bold;
     height: 4em;
-    line-height: 1em;
     border-bottom: 1px rgba(255, 255, 255, 0.5);
     text-decoration: none;
     text-transform: uppercase;
@@ -174,8 +172,7 @@ body, h1, h2, h3, h4, h5, h6, p {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(256, 256, 256, .9);
-/*  box-shadow: 0 2px 3px rgba(0,0,0,.1);*/
+  background: rgba(256, 256, 256, .8);
   height: 80px;
   z-index: 150;
   margin-bottom: -80px;
@@ -282,7 +279,7 @@ h2.h-subtitle {
 .about {
     display: inline-block;
     margin-left: 40%;
-    padding-top: 4em;
+    margin-top: 4em;
     padding-left: 4em;
     padding-right: 7em;
     letter-spacing: 1px;
@@ -299,7 +296,7 @@ h2.h-subtitle {
     .about {
         text-align: center!important;
         margin: 0;
-        padding: 5em 3em 5em 3em;
+        padding: 4em 3em 5em 3em;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -335,14 +332,29 @@ h2.h-subtitle {
     background: url("../img/contact-overlay.jpg") no-repeat center;
     background-size: cover;
     position: fixed;
-    width: 40%;
+    right: 0;
+    width: 50%;
     height: 100%;
     z-index: -1000;
+}
+
+.contact {
+    display: inline-block;
+    margin-top: 7em;
+    padding-left: 4em;
+    letter-spacing: 1px;
+    max-width: 47%;
 }
 
 @media screen and (max-width: 768px) {
     .contact-overlay {
         display: none!important;
+    }
+    .contact {
+        text-align: center!important;
+        margin: 0;
+        padding: 7em 3em 5em 3em;
+        max-width: none;
     }
 }
 
@@ -396,7 +408,7 @@ u {
 
 .project-subheading {
     font-family: 'Bree Serif', serif;
-    font-size: 30px;
+    font-size: 36px;
     margin-top: 30px;
     margin-bottom: 10px;
     letter-spacing: 0px;
@@ -415,8 +427,8 @@ u {
         margin-bottom: 10px;
     }
     .project-subheading {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 28px;
+        line-height: 32px;
     }
     .project-summary {
         font-size: 16px;
@@ -556,6 +568,15 @@ u {
 .icon-wrap:hover {
     transition: all 0.2s ease-in-out;
     opacity: initial;
+}
+
+#nav-arrow-up {
+    width: 35px;
+    height: 35px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 #nav-arrow-prev, #nav-arrow-next {
