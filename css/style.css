@@ -329,7 +329,7 @@ h2.h-subtitle {
     color: #fff; }
 
 .contact-overlay {
-    background: url("../img/contact-overlay.jpg") no-repeat center;
+    background: url("../img/contact-overlay-cmpr.jpg") no-repeat center;
     background-size: cover;
     position: fixed;
     right: 0;
@@ -519,7 +519,7 @@ u {
     margin-bottom: 20px;
 }
 
-#load-more {
+#default-btn, #load-more {
   display: inline-block;
   line-height: 1;
   cursor: pointer;
@@ -533,9 +533,13 @@ u {
   background-color: #424242;
   color: #fff;
 }
-  #load-more:hover, #load-more:focus {
+  #load-more:hover, #load-more:focus, #default-btn:hover, #default-btn:focus {
     background-color: #b3aac3;
     color: #fff; }
+
+#default-btn {
+    margin-top: 1em;
+}
 
 #arrow-wrapper {
     visibility: hidden;
