@@ -451,10 +451,24 @@ u {
     margin-bottom: 24px;
 }
 
+h4.section-highlight {
+    padding: 1em 0em .5em 0em;
+    font-style: italic;
+    color: darkgrey;
+}
+
 .side-note {
     font-size: 16px;
     font-style: italic;
     color: #636363;
+}
+
+p.quote {
+    font-size: 16px;
+    font-style: italic;
+    color: #636363;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
     
 .project-visual {
@@ -467,6 +481,19 @@ u {
         max-width: 720px;
         margin-left: 1em;
     }
+}
+
+figcaption {
+    font-size: 14px;
+    color: #888888;
+    text-align: center;
+}
+
+#ellipsis {
+    display: block;
+    width: 30px;
+    margin-bottom: 1em;
+    margin-left: 50%;
 }
 
 #instafeed {
