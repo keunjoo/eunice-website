@@ -172,7 +172,7 @@ body, h1, h2, h3, h4, h5, h6, p {
   position: fixed;
   width: 100%;
   top: 0;
-  background: rgba(256, 256, 256, .9);
+  background: rgba(256, 256, 256, .8);
   height: 80px;
   z-index: 150;
   margin-bottom: -80px;
