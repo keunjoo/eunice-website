@@ -447,7 +447,7 @@ u {
 }
 
 .project-explanation > .project-section > p {
-    line-height: 1.7em;
+    line-height: 1.5em;
     margin-bottom: 24px;
 }
 
@@ -484,7 +484,7 @@ p.quote {
 }
 
 figcaption {
-    font-size: 14px;
+    font-size: 13px;
     color: #888888;
     text-align: center;
 }
