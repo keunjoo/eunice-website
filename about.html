@@ -12,38 +12,27 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
   </head>
   <body>
-      <div class="profile-overlay"></div>
-      <nav role="navigation">
-      <ul id="menu" class="overlay-menu vertical menu" data-accordion-menu>
-        <li><a href="/about">about</a></li>
-        <li><a href="#">work</a>
-            <ul class="menu vertical nested children">
-            <li id="work-subitem"><a href="/clipper">Clipper Card</a></li>
-            <li id="work-subitem"><a href="/tidyup">TidyUp</a></li>
-            <li id="work-subitem"><a href="/berkop">Berkeley Opinion</a></li>
-            <li id="work-subitem"><a href="/typography">Typography</a></li>
-            <li id="work-subitem"><a href="/iphoneography">iPhoneography</a></li>
-            </ul>
-        </li>
-        <li><a href="/contact">contact</a></li>
-       </ul>
-      <a href="#menu" class="toggle-menu">
-         <div id="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>  
-      </a>
-      <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
-    </nav> 
-      <div class="about">
-          <img id="profile-thumbnail" src="img/profile-thumbnail.jpg" alt="Eunice Kim">
-          <h2>Hi, I'm Eunice.</h2>
-          <p>I am a fourth-year <b>Cognitive Science</b> major at UC Berkeley, with a passion for functional aesthetics. I believe that <b>empathy</b> is the key component of good design, and good design is an equilateral triangle of <b>functionality, aesthetics and user experience</b>. I am always intrigued by human cognition and behavior, and this curiosity translates into my appetite for that perfect, equilateral triangle.</p>
-          <p>Design and academics aside, I like exploring new cafes and bars, going on adventures in the city, and watching movies multiple times <span class="side-note">(I watched Inception 8 times and The Shawshank Redemption 4 times.)</span>. I am particularly obsessed with sunsets, nighttimes and cityscapes—any combination of these is enough to get me extremely excited. I’ve been working on a (very) long-term project of plowing through IMDb’s Top 250 movies list.</p>
+<!--      <div class="profile-overlay"></div>-->
+    <div class="nav-wrapper">
+        <nav role="navigation" class="nav-right">
+            <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+            <div class="nav-item"><a href="#">Work</a></div>
+            <div class="nav-item"><a href="/contact">Contact</a></div>
+        </nav>
+    </div>  
+     <div class="row small-12 large-8 columns">
+        <div class="introduction">
+          <img id="profile-thumbnail" src="img/prof2.jpg" alt="Eunice Kim">
+          <h2>Hi, I'm Eunice, </h2>
+          <h2 class="h-subtitle"> an aspiring
+            <span class="element" style="color:#645b77; font-weight: 700"></span>
+            <span class="typed-cursor"></span>
+            designer </h2>
+          <p>I am a recent UC Berkeley grad with a degree in <b>Cognitive Science</b> and a passion for functional aesthetics. I believe that <b>empathy</b> is the key component of good design, and good design is an equilateral triangle of <b>functionality, aesthetics and user experience</b>. I am always intrigued by human cognition and behavior, and this curiosity translates into my appetite for that perfect, equilateral triangle.</p>
+          <p>Design aside, I like exploring new cafes and bars, going on adventures in the city, and watching movies multiple times <span class="side-note">(I watched Inception 9 times and The Shawshank Redemption 4 times.)</span>. I am particularly obsessed with sunsets, nighttimes and cityscapes—any combination of these is enough to get me extremely excited. I’ve been working on a (very) long-term project of plowing through IMDb’s Top 250 movies list.</p>
           <a href="resume.pdf"><div class="button-resume">see my résumé</div></a>
       </div>
+     </div>
     
 
         
@@ -55,6 +44,14 @@
     <script>
       $(".toggle-menu").on("click", function(){
           $("#menu").toggleClass("is-open");
+      });
+        
+     $(function(){
+          $(".element").typed({
+              strings: ["user experience", "user interface"],
+              typeSpeed: 50,
+              backDelay: 700,
+          });
       });
         
       $(document).ready(function() {

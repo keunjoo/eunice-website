@@ -13,7 +13,31 @@
   </head>
 
   <body>
-    <nav class="nav-down">
+    <nav role="navigation">
+      <ul id="menu" class="overlay-menu vertical menu" data-accordion-menu>
+        <li><a href="/about">about</a></li>
+        <li><a href="#">work</a>
+            <ul class="menu vertical nested children">
+            <li id="work-subitem"><a href="/clipper">Clipper Card</a></li>
+            <li id="work-subitem"><a href="/tidyup">TidyUp</a></li>
+            <li id="work-subitem"><a href="/berkop">Berkeley Opinion</a></li>
+            <li id="work-subitem"><a href="/typography">Typography</a></li>
+            <li id="work-subitem"><a href="/iphoneography">iPhoneography</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact">contact</a></li>
+       </ul>
+      <a href="#menu" class="toggle-menu">
+         <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>  
+      </a>
+      <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+    </nav>
+     <nav class="nav-down">
       <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
     </nav>    
      <div class="row medium-12 large-12 columns">
@@ -107,7 +131,6 @@
         </div>
         <div class="project-section">
             <div class="project-subheading">Hi-fi Mockups</div>
-<!--            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore hic minima voluptates et eum magnam ad doloribus, temporibus eveniet numquam aperiam quo ab deleniti quidem laborum esse, quos voluptas! Autem dolore illo culpa cum laudantium, eos eius rem error adipisci.</p>-->
             <figure>
                 <img class="project-visual" src="img/proj/clipper/screens1.jpg">
                 <figcaption>Card: Showing your card in home screen allows direct access.</figcaption>

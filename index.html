@@ -5,64 +5,36 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eunice Kim | UI/UX Designer</title>
-<!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/foundation.css"/>
     <link rel="stylesheet" href="css/app.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Bree+Serif' rel='stylesheet' type='text/css'>
-<!-- GOOGLE ANALYTICS -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-75915301-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
   </head>
-  
   <body>
-    <div class="background-overlay"></div>
-    <nav role="navigation">
-      <ul id="menu" class="overlay-menu vertical menu" data-accordion-menu>
-        <li><a href="/about">about</a></li>
-        <li><a href="#">work</a>
-            <ul class="menu vertical nested children">
-            <li id="work-subitem"><a href="/clipper">Clipper Card</a></li>
-            <li id="work-subitem"><a href="/tidyup">TidyUp</a></li>
-            <li id="work-subitem"><a href="/berkop">Berkeley Opinion</a></li>
-            <li id="work-subitem"><a href="/typography">Typography</a></li>
-            <li id="work-subitem"><a href="/iphoneography">iPhoneography</a></li>
-            </ul>
-        </li>
-        <li><a href="/contact">contact</a></li>
-       </ul>
-      <a href="#menu" class="toggle-menu">
-         <div id="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>  
-      </a>
-      <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
-    </nav> 
+    <div class="nav-wrapper">
+        <nav role="navigation" class="nav-right">
+            <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+            <div class="nav-item"><a href="#">Work</a></div>
+            <div class="nav-item"><a href="/contact">Contact</a></div>
+        </nav>
+    </div>  
+     <div class="row small-12 large-8 columns">
+        <div class="introduction">
+          <img id="profile-thumbnail" src="img/prof2.jpg" alt="Eunice Kim">
+          <h2>Hi, I'm Eunice, </h2>
+          <h2 class="h-subtitle"> an aspiring
+            <span class="element" style="color:#645b77; font-weight: 700"></span>
+            <span class="typed-cursor"></span>
+            designer </h2>
+          <p>I am a recent UC Berkeley grad with a degree in <b>Cognitive Science</b> and a passion for functional aesthetics. I believe that <b>empathy</b> is the key component of good design, and good design is an equilateral triangle of <b>functionality, aesthetics and user experience</b>. I am always intrigued by human cognition and behavior, and this curiosity translates into my appetite for that perfect, equilateral triangle.</p>
+          <p>Design aside, I like exploring new cafes and bars, going on adventures in the city, and watching movies multiple times <span class="side-note">(I watched Inception 9 times and The Shawshank Redemption 4 times.)</span>. I am particularly obsessed with sunsets, nighttimes and cityscapes—any combination of these is enough to get me extremely excited. I’ve been working on a (very) long-term project of plowing through IMDb’s Top 250 movies list.</p>
+          <a href="resume.pdf"><div class="button-resume">see my résumé</div></a>
+      </div>
+     </div>
     
-    <div class="row">
-      <div class="large-12 columns">
-          <h1 class="h-title">
-              <b>Eunice Kim</b></h1>
-          <h2 class="h-subtitle">
-            aspiring 
-              <span class="element" style="color:#645b77; font-weight: 700"></span>
-             <span class="typed-cursor"></span>
-             designer
-          </h2>
-      </div>          
-    </div>
 
+        
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
@@ -73,13 +45,14 @@
           $("#menu").toggleClass("is-open");
       });
         
-      $(function(){
+     $(function(){
           $(".element").typed({
-              strings: ["user interface", "user experience"],
+              strings: ["user experience", "user interface"],
               typeSpeed: 50,
               backDelay: 700,
           });
       });
+        
       $(document).ready(function() {
           $('body').css('display', 'none');
           $('body').fadeIn(500);
@@ -98,5 +71,6 @@
           });
       });
       </script>
+
   </body>
 </html>
