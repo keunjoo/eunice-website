@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eunice Kim | UI/UX Designer</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <script src="js/modernizr.custom.js"></script>
+  </head>
+
+  <body>
+    <div class="nav-wrapper">
+        <nav role="navigation" class="nav-right">
+            <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+            <div class="nav-item"><a href="/work" class="selected">Work</a></div>
+            <div class="nav-item"><a href="/contact">Contact</a></div>
+        </nav>
+    </div>
+    <ul class="work-grid grid-style">
+      <li>
+         <figure>
+             <div><img src="img/proj/clipper/clipper-thumbnail.png" alt=""></div>
+             <figcaption>
+                 <h3>Clipper Card App Design</h3>
+                 <span>UI/UX Design, User Research, Usability Testing</span>
+                 <a href="/clipper.html">check it out!</a>
+             </figcaption>
+         </figure>
+       </li>
+       <li>
+         <figure>
+             <div><img src="img/proj/tidyup/tidyup-thumbnail.png" alt=""></div>
+             <figcaption>
+                 <h3>TidyUp App Design</h3>
+                 <span>User Interface Design</span>
+                 <a href="/tidyup.html">check it out!</a>
+             </figcaption>
+         </figure>
+       </li>
+       <li>
+         <figure>
+             <div><img src="img/proj/berkop/logo.png" alt=""></div>
+             <figcaption>
+                 <h3>Berkeley Opinion</h3>
+                 <span>Graphic Design, Marketing Design</span>
+                 <a href="/berkop.html">check it out!</a>
+             </figcaption>
+         </figure>
+       </li>
+       <li>
+         <figure>
+             <div><img src="img/proj/typo/typo-thumbnail.jpg" alt=""></div>
+             <figcaption>
+                 <h3>Working with Typography</h3>
+                 <span>Graphic Design</span>
+                 <a href="/typography.html">check it out!</a>
+             </figcaption>
+         </figure>
+       </li>
+       <li>
+         <figure>
+             <div><img src="img/proj/iphoneography.jpg" alt=""></div>
+             <figcaption>
+                 <h3>iPhone-ography</h3>
+                 <span>Digital Photography</span>
+                 <a href="/iphoneography.html">check it out!</a>
+             </figcaption>
+         </figure>
+       </li>  
+      </ul>
+  
+  <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('body').css('display', 'none');
+          $('body').fadeIn(500);
+          $('.link').click(function() {
+              event.preventDefault();
+              newLocation = this.href;
+              $('body').fadeOut(1000, newpage);
+          });
+          function newpage() {
+              window.location = newLocation;
+          }});
+    </script>
+    <script src="js/toucheffects.js"></script>
+  </body>
+</html>

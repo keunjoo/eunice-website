@@ -13,11 +13,13 @@
   </head>
 
   <body>
-    <nav class="nav-down">
-      <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
-    </nav>
-    
-
+    <div class="nav-wrapper">
+        <nav role="navigation" class="nav-right">
+            <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+            <div class="nav-item"><a href="/work">Work</a></div>
+            <div class="nav-item"><a href="/contact">Contact</a></div>
+        </nav>
+    </div>  
      <div class="row medium-12 large-12 columns">
          <div id="project-cover">
              <div class="project-title">
@@ -43,44 +45,13 @@
            </a>
        </div>
      </div>
-     <div class="footer-nav">
-      <div class="row large-12 columns">
-       <div class="medium-6 large-7 columns">
-           <a href="/typography">
-               <div class="icon-wrap">
-                 <img id="nav-arrow-prev" src="img/project-prev.svg" alt="">
-                 <span class="prev-proj">Previous Project</span>
-                 <div class="prev-proj-title">Working with Typography</div>
-               </div>
-           </a>
-       </div>
-       <div class="medium-6 large-6 columns"></div>
-      </div>
-     </div>
-     
   
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/typed.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script>
-      $(".toggle-menu").on("click", function(){
-          $("#menu").toggleClass("is-open");
-      });
-        
-      var  mn = $(".sticky-nav");
-      mns = "sticky-nav-scrolled";
-      hdr = $('project-explanation').height();
-      
-      $(window).scroll(function() {
-          if( $(this).scrollTop() > hdr ) {
-              mn.addClass(mns);
-          } else {
-              mn.removeClass(mns);
-          }
-      });
 
       $(document).ready(function() {
           $('body').css('display', 'none');
@@ -93,13 +64,6 @@
           function newpage() {
               window.location = newLocation;
           }});
-        
-      $(document).ready(function(){
-          $('#nav-icon').click(function(){
-              $(this).toggleClass('open');
-          });
-      });
-        
         $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

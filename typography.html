@@ -13,11 +13,13 @@
   </head>
 
   <body>
-    <nav class="nav-down">
-      <a href="index.html" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
-    </nav>
-    
-
+    <div class="nav-wrapper">
+        <nav role="navigation" class="nav-right">
+            <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+            <div class="nav-item"><a href="/work">Work</a></div>
+            <div class="nav-item"><a href="/contact">Contact</a></div>
+        </nav>
+    </div>  
      <div class="row medium-12 large-12 columns">
          <div id="project-cover">
              <div class="project-title">
@@ -58,52 +60,12 @@
           </div>
        </div>
      </div>
-     
-     <div class="footer-nav">
-      <div class="row large-12 columns">
-       <div class="medium-6 large-6 columns">
-           <a href="/berkop.html">
-               <div class="icon-wrap">
-                 <img id="nav-arrow-prev" src="img/project-prev.svg" alt="">
-                 <span class="prev-proj">Previous Project</span>
-                 <div class="prev-proj-title">Berkeley Opinion</div>
-               </div>
-           </a>
-       </div>
-       <div class="medium-6 large-6 columns">
-           <a href="/iphoneography.html">
-               <div class="icon-wrap">
-                   <img id="nav-arrow-next" src="img/project-next.svg" alt="">
-                   <span class="next-proj">Next Project</span>
-                   <div class="next-proj-title">iPhoneography</div>
-               </div>
-           </a>
-       </div>
-      </div>
-     </div>
-     
   
   <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/typed.js"></script>
     <script>
-      $(".toggle-menu").on("click", function(){
-          $("#menu").toggleClass("is-open");
-      });
-      var  mn = $(".sticky-nav");
-      mns = "sticky-nav-scrolled";
-      hdr = $('project-explanation').height();
-      
-      $(window).scroll(function() {
-          if( $(this).scrollTop() > hdr ) {
-              mn.addClass(mns);
-          } else {
-              mn.removeClass(mns);
-          }
-      });
-
       $(document).ready(function() {
           $('body').css('display', 'none');
           $('body').fadeIn(500);
@@ -115,12 +77,6 @@
           function newpage() {
               window.location = newLocation;
           }});
-        
-      $(document).ready(function(){
-          $('#nav-icon').click(function(){
-              $(this).toggleClass('open');
-          });
-      });
     </script>
   </body>
 </html>

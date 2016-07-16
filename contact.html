@@ -13,11 +13,11 @@
   </head>
   <body>
       <div class="contact-overlay"></div>
-<!--
-      <nav class="nav-down">
-          <a href="index.html" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
-    </nav>
--->
+      <div class="nav-wrapper">
+        <nav role="navigation" class="nav-right">
+            <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+        </nav>
+    </div>  
       <div class="contact">
           <h2>Let's stay connected!</h2>
           <p>Do you have an internship opportunity for me to practice my passion for good design?<br>
@@ -35,10 +35,6 @@
     <script src="js/app.js"></script>
     <script src="js/typed.js"></script>
     <script>
-      $(".toggle-menu").on("click", function(){
-          $("#menu").toggleClass("is-open");
-      });
-
       $(document).ready(function() {
           $('body').css('display', 'none');
           $('body').fadeIn(500);
@@ -50,12 +46,6 @@
           function newpage() {
               window.location = newLocation;
           }});
-        
-      $(document).ready(function(){
-          $('#nav-icon').click(function(){
-              $(this).toggleClass('open');
-          });
-      });
       </script>
 
   </body>

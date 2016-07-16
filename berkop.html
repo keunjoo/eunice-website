@@ -13,34 +13,13 @@
   </head>
 
   <body>
-    <nav class="nav-down">
-<!--
-      <ul id="menu" class="overlay-menu vertical menu" data-accordion-menu>
-        <li><a href="/about.html">about</a></li>
-        <li><a href="#">work</a>
-            <ul class="menu vertical nested children">
-            <li id="work-subitem"><a href="#">TidyUp</a></li>
-            <li id="work-subitem"><a href="#">Berkeley Opinion</a></li>
-            <li id="work-subitem"><a href="#">Typography</a></li>
-            <li id="work-subitem"><a href="#">iPhoneography</a></li>
-            <li id="work-subitem">...</li>
-            </ul>
-        </li>
-        <li><a href="#">contact</a></li>
-      </ul>
-      <a href="#menu" class="toggle-menu">
-         <div id="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>  
-      </a>
--->
-      <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
-    </nav>
-    
-
+    <div class="nav-wrapper">
+        <nav role="navigation" class="nav-right">
+            <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+            <div class="nav-item"><a href="/work">Work</a></div>
+            <div class="nav-item"><a href="/contact">Contact</a></div>
+        </nav>
+    </div>  
      <div class="row medium-12 large-12 columns">
          <div id="project-cover">
              <div class="project-title">
@@ -72,52 +51,12 @@
           </div>
        </div>
      </div>
-     
-     <div class="footer-nav">
-      <div class="row large-12 columns">
-       <div class="medium-6 large-6 columns">
-           <a href="/tidyup">
-               <div class="icon-wrap">
-                 <img id="nav-arrow-prev" src="img/project-prev.svg" alt="">
-                 <span class="prev-proj">Previous Project</span>
-                 <div class="prev-proj-title">TidyUp</div>
-               </div>
-           </a>
-       </div>
-       <div class="medium-6 large-6 columns">
-           <a href="/typography">
-               <div class="icon-wrap">
-                   <img id="nav-arrow-next" src="img/project-next.svg" alt="">
-                   <span class="next-proj">Next Project</span>
-                   <div class="next-proj-title">Working with Typography</div>
-               </div>
-           </a>
-       </div>
-      </div>
-     </div>
-     
   
   <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/typed.js"></script>
     <script>
-      $(".toggle-menu").on("click", function(){
-          $("#menu").toggleClass("is-open");
-      });
-        
-      var  mn = $(".sticky-nav");
-      mns = "sticky-nav-scrolled";
-      hdr = $('project-explanation').height();
-      
-      $(window).scroll(function() {
-          if( $(this).scrollTop() > hdr ) {
-              mn.addClass(mns);
-          } else {
-              mn.removeClass(mns);
-          }
-      });
 
       $(document).ready(function() {
           $('body').css('display', 'none');
@@ -130,12 +69,6 @@
           function newpage() {
               window.location = newLocation;
           }});
-        
-      $(document).ready(function(){
-          $('#nav-icon').click(function(){
-              $(this).toggleClass('open');
-          });
-      });
     </script>
   </body>
 </html>
