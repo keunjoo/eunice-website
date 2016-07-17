@@ -219,13 +219,6 @@ u {
     font-size: 22px;
     text-transform: uppercase;
 }
-.work-grid figcaption a {
-    text-align: center;
-    padding: 1em;
-    display: inline-block;
-    background: #ec576c;
-    color: #fff;
-}
 
 .work-grid figcaption span {
     padding-top: 2em;
@@ -233,14 +226,31 @@ u {
     font-style: italic;
 }
 
+.resp-proj-caption {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
 	.work-grid {
 		padding: 10px 10px 10px 10px;
 	}
 	.work-grid li {
-		width: 92%;
-/*		min-width: 400px;*/
+		width: auto;
 	}
+    .work-grid figcaption {
+        display: none;
+    }
+    .resp-proj-caption {
+        display: block!important;
+        margin-top: 1em;
+        text-align: center;
+    }
+    .resp-proj-caption h3 {
+        color: #645b77;
+    }
+    .resp-proj-caption span {
+        font-size: 14px;
+    }
 }
 
 
