@@ -189,7 +189,7 @@ u {
 
 .work-grid li {
     display: inline-block;
-    width: 500px;
+    width: 400px;
     margin: 0;
     padding: 20px;
     text-align: left;
@@ -200,7 +200,7 @@ u {
     position: relative;
 }
 .work-grid figure {
-    max-width: 500px;
+    max-width: 400px;
     display: block;
     position: relative;
 }
@@ -216,7 +216,7 @@ u {
     margin: 0;
     padding: 0 0 1em 0;
     color: inherit;
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
