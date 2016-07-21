@@ -9,12 +9,13 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 .nav-right {
     position: relative;
-    width: auto;
+    width: 100%;
     top: 0;
     text-align: right;
     display: block;
     padding-right: 1em;
     padding-bottom: 1em;
+    background-color: #fff;
 }
 
 .nav-item {
@@ -26,6 +27,12 @@ body, h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 2px;
     line-height: 1em;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
 }
 
 a {

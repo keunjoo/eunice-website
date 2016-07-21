@@ -50,20 +50,10 @@
     <script src="js/vendor/what-input.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/fadein.js"></script>
+    <script src="js/stickynav.js"></script>
     <script type="text/javascript" src="js/instafeed.min.js"></script>
     <script>
-
-      $(document).ready(function() {
-          $('body').css('display', 'none');
-          $('body').fadeIn(500);
-          $('.link').click(function() {
-              event.preventDefault();
-              newLocation = this.href;
-              $('body').fadeOut(1000, newpage);
-          });
-          function newpage() {
-              window.location = newLocation;
-          }});
         $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
