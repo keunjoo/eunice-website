@@ -1,0 +1,110 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eunice Kim | UI/UX Designer</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="nav-wrapper">
+        <nav role="navigation" class="nav-right">
+            <a href="index" class="logo"><img src="img/EK.png" alt="Eunice Kim logo"></a>
+            <div class="nav-item"><a href="/work">Work</a></div>
+            <div class="nav-item"><a href="/contact">Contact</a></div>
+        </nav>
+    </div>      
+     <div class="row medium-12 large-12 columns">
+         <div id="project-cover">
+             <div class="project-title">
+                 Nventi Explore
+             </div>
+             <div class="project-type">
+             UI/UX Design, User Research, Usability Testing
+             </div>
+             <div class="project-summary">
+                 Nventi is an analytical search tool that reinvents the experience of patent navigation. As a UX/UI designer, I tackled questions ranging from what information innovators and entrepreneurs need to how can the platform's information architecture can be improved.
+             </div>
+         </div>     
+     </div>
+     <div id="project-image"><img class="project-img" src="img/proj/nventi/desk-mockup.jpg"></div>
+     <div class="row small-11 large-7 columns">
+       <div class="project-explanation">
+          <div class="project-section">
+              <div class="project-subheading">Introduction</div>  
+              <p>During my internship at Nventi, I took on a project where I got to design parts of the SaaS application. Nventi serves to provide inventors and innovators with a search analytics tool for patents, and present data in an intuitive, meaningful way. Though incredibly important for inventors, patents oftentimes feel intimidating with its unfriendly vocabulary and dense volume. As a UX/UI designer, my responsibility was to design the SaaS platform and make the experience of navigating through patents more delightful and comprehensible.</p>
+              <p>When I joined Nventi, we had just deployed a demo. The initial design included a homepage (that is now News), which displays a national overview populated with curated news items based on a user’s interests, an activity feed and the patent filing trend. Then, there we had Explore as our second tab in which users can search patents or simply explore by typing in a keyword of interest. Explore was where we show patents in a more meaningful way, by visualizing the data using only the important pieces of information.</p>
+              <p>But what are the important pieces of information? Our visualizations and table show the technology category, entity, filing location, date, and title. Would our personas find these sufficient? Are we missing anything? Are these considered important all across the user personas? How could we assume the order of the visualizations? We had to explore these questions with care and conduct tangible user research, not just relying on feedback and comments from potential investors.</p>
+          </div>
+          <div class="project-section">
+              <div class="project-subheading">User Testing & Usability Testing</div>  
+              <p>While we aimed to investigate how users deal with intellectual property, we also wanted to explore how users interact with our demo app. Exploring both aspects would allow us to plan future projects and tasks.</p>
+              <p>Our research objectives were:</p>
+              <ol>
+                  <li>To understand the user’s workflow in relation to Nventi app</li>
+                  <li>To evaluate the app’s IA</li>
+                  <li>To identify highlights and pain points</li>
+              </ol>
+              <p>Because we are based in SkyDeck, a startup incubator, we lay our focus on entrepreneurs and innovators.</p>
+              <img src="img/ellipsis.png" id="ellipsis">
+              <p>My supervisor and I interviewed 4 people from different startups, recorded responses on Trello. Going over the results with the executive team, I took notes of the common pain points. It was surprising to see people get stuck with what we did not even think would be problematic or thought was intuitive. Some of the recurring problems were:</p>
+              <ul>
+                  <li>Lack of instruction; uninformative empty state</li>
+                  <li>No display of visualization at default after search</li>
+                  <li>Not all visualizations are particularly meaningful or useful for every user; lack of flexibility in display</li>
+              </ul>
+          <div class="project-section">
+              <div class="project-subheading">Lo-fi Wireframes</div>
+              <p>Based on these findings, I wireframed Explore page on Balsamiq.</p>
+              <h4 class="section-highlight">Uninformative empty state</h4>
+              <p>Whether or not the user already has a search keyword in mind, Explore should allow him/her to literally explore, looking into the current statuses of the technologies of interest. Therefore, a strong CTA for search was necessary.</p>
+              <p>The old design has a search bar on the top nav, which could be a good CTA when a user is on the homepage but could feel out-of-place when s/he is on Explore. Generally, users didn't know what kind of results to expect from a search on the homepage and didn't think it would direct them to Explore.</p>
+              <img class="project-visual" src="img/proj/nventi/explore1.jpg">
+              <p>In the new design, I added a search box on Explore page. Also, a message that cues useful searches was added.</p>
+              <img src="img/ellipsis.png" id="ellipsis">
+              <h4 class="section-highlight">No display of visualization at default after search & Lack of flexibility in display</h4>
+              <p>Once a user performs a search, s/he expects results immediately. However, the old design didn't show any of the visualizations, which are the key feature of Nventi app. Users did not notice the pills and went straight on to scroll through the table of numerous patents, which quickly bored them.</p>
+              <img class="project-visual" src="img/proj/nventi/explore2.jpg">
+              <p>This called for a need to show something immediately after search. Search should be a simple process, not a multistep commitment. Because every user prioritizes different kinds of information differently, it’s hard to pick one visualization to display at default. I incorporated a card layout, which would allow users to see all visualizations at once, adjust the size of each visualization card and even move the cards around according to their preferences.</p>
+              <img class="project-visual" src="img/proj/nventi/explore3.jpg">
+              <p>It was also challenging to improve the information architecture of the patent table. Patents are very dense in text, and their titles can be quite long. Importantly, users aren’t interested in seeing the full title and other supplemental information all the time. Hence, I also employed the progressive disclosure technique, which would allow the user to click for the full title, entity information, author(s)’s names, abstract and related figures. Following up on the interviewees later, I learned that this was a more elegant, effective solution to show the full title than letting overflow text scroll on hover.</p>
+              
+          </div>
+        <div class="project-section">
+            <div class="project-subheading">Hi-fi Mockups</div>
+            <p>After wireframing on Balsamiq, I created high-fidelity mockups using Sketch. I also revised the general color scheme of the platform. I dimmed the original bright sky blue to dark navy blue to convey professionalism and expertise. There still had to be a vibrant color that represents entrepreneurship and creativity, which is what Nventi strongly endorses. Saturated orange was selected to create such contrast.</p>
+            <figure>
+                <img class="project-visual" src="img/proj/nventi/screen3.jpg">
+                <figcaption>All visualization cards are shown at default after search.</figcaption>
+                <img class="project-visual" src="img/proj/nventi/screen4.jpg">
+                <figcaption>A separate search bar within the page eliminates confusion.</figcaption>
+                <img class="project-visual" src="img/proj/nventi/screen1.jpg">
+                <figcaption>When the side bar is collapsed, cards dynamically fit in the screen.</figcaption>
+                <img class="project-visual" src="img/proj/nventi/screen2.jpg">
+                <figcaption>The patent table progressivesly discloses additional information upon row selection.</figcaption>
+            </figure>
+        </div>
+<!--
+        <div class="project-section">
+             <div class="project-subheading">Wrapping Up</div>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur aliquid enim hic minima, illo quae porro iure distinctio in placeat laudantium ratione. In iusto nam explicabo pariatur non inventore fuga neque adipisci praesentium illum, officia voluptatibus obcaecati dicta tenetur, id natus beatae at aspernatur molestias nostrum enim, rem quas omnis. Placeat, soluta, voluptates! Laudantium facilis nam, quidem necessitatibus facere expedita sed architecto nobis maiores eius magnam tempora, fuga aperiam mollitia impedit libero minima distinctio unde optio quisquam repellendus earum.</p>
+        </div>
+-->
+       </div>
+     </div>
+    </div>
+  
+  <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/fadein.js"></script>
+    <script src="js/stickynav.js"></script>
+  </body>
+</html>
