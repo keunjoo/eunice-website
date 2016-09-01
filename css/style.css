@@ -252,6 +252,7 @@ u {
         display: block!important;
         margin-top: 1em;
         text-align: center;
+        width: auto;
     }
     .resp-proj-caption h3 {
         color: #645b77;
