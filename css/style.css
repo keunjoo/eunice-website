@@ -8,7 +8,7 @@ body, h1, h2, h3, h4, h5, h6, p {
 /* NAVBAR*/
 
 .nav-right {
-    position: relative;
+    position: fixed;
     width: 100%;
     top: 0;
     text-align: right;
@@ -28,12 +28,6 @@ body, h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 2px;
     line-height: 1em;
     color: rgba(0, 0, 0, 0.5);
-}
-
-.fixed {
-    position: fixed;
-    top: 0;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2)
 }
 
 a {
@@ -161,7 +155,7 @@ h2.h-subtitle {
 .contact {
     display: inline-block;
     margin-top: 7em;
-    padding-left: 1em;
+    padding-left: 4em;
     letter-spacing: 1px;
     max-width: 40%;
 }
