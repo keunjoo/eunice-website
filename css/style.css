@@ -15,8 +15,11 @@ body, h1, h2, h3, h4, h5, h6, p {
     display: block;
     padding-right: 1em;
     padding-bottom: 1em;
-    background-color: rgba(256, 256, 256, 0.9);
     z-index: 999;
+}
+
+.nav-white {
+    background-color: rgba(256, 256, 256, 0.9);
 }
 
 .nav-item {
@@ -234,10 +237,7 @@ u {
 
 @media screen and (max-width: 768px) {
 	.work-grid {
-		padding: 10px 10px 10px 10px;
-	}
-	.work-grid li {
-		width: auto;
+		padding: 10px;
 	}
     .work-grid figcaption {
         display: none;
