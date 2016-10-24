@@ -125,7 +125,7 @@ h2.h-subtitle {
 }
 
 
-.button-resume {
+.button-cta {
   display: inline-block;
   text-align: center;
   line-height: 1;
@@ -141,7 +141,7 @@ h2.h-subtitle {
   background-color: #424242;
   color: #fff;
 }
-  .button-resume:hover, .button-resume:focus {
+  .button-cta:hover, .button-cta:focus {
     background-color: #b3aac3;
     color: #fff; }
 
@@ -181,8 +181,36 @@ a#contact {
 
 u {
     text-decoration: none;
-    border-bottom: 3px solid #b3aac3;
+    border-bottom: 5px solid #b3aac3;
 }
+
+.cta-link-container {
+    display: inline-block;
+}
+
+.cta-link {
+    font-size: 17px;
+    box-shadow: inset 0 -3px 0 0 #b3aac3;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.cta-link:hover {
+    box-shadow: inset 0 -10px 0 0 #b3aac3;
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+}
+
+#link {
+    font-weight: bold;
+}
+
+#link:hover {
+    color: #645b77;
+    transition: color 0.1s ease-in-out;
+}
+
 
 .work-grid {
     padding: 4em 3em 4em 3em;
@@ -481,7 +509,7 @@ figcaption {
     margin-bottom: 20px;
 }
 
-#default-btn, #load-more {
+#default-btn {
   display: inline-block;
   line-height: 1;
   cursor: pointer;
@@ -495,12 +523,18 @@ figcaption {
   background-color: #424242;
   color: #fff;
 }
-  #load-more:hover, #load-more:focus, #default-btn:hover, #default-btn:focus {
+  #default-btn:hover, #default-btn:focus {
     background-color: #b3aac3;
     color: #fff; }
 
 #default-btn {
     margin-top: 1em;
+}
+
+#load-more {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
 }
 
 #arrow-wrapper {
